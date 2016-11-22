@@ -1,3 +1,4 @@
+require 'psd/layer/info/artboard'
 require 'psd/layer/info/black_white'
 require 'psd/layer/info/blend_clipping_elements'
 require 'psd/layer/info/blend_interior_elements'
@@ -52,6 +53,7 @@ class PSD
     module Info
       # All of the extra layer info sections that we know how to parse.
       LAYER_INFO = {
+        artboard: Artboard,
         black_white: BlackWhite,
         blend_clipping_elements: BlendClippingElements,
         blend_interior_elements: BlendInteriorElements,
